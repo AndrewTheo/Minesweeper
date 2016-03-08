@@ -67,6 +67,9 @@ public boolean isWon()
 public void displayLosingMessage()
 {
   //your code here
+   for (int i = 0; i < NUM_ROWS; i++)
+    for (int j = 0; j < NUM_COLS; j++)
+      buttons[i][j].mousePressed();
 
   buttons[9][6].setLabel("Y");
   buttons[9][7].setLabel("O");
@@ -77,9 +80,7 @@ public void displayLosingMessage()
   buttons[9][12].setLabel("S");
   buttons[9][13].setLabel("E");
   
-  for (int i = 0; i < NUM_ROWS; i++)
-    for (int j = 0; j < NUM_COLS; j++)
-      buttons[i][j].mousePressed();
+ 
 }
 public void displayWinningMessage()
 {
